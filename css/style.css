@@ -3,6 +3,18 @@
 }
 
 .box {
-  border: 1px solid black;
+  border: 5px solid black;
   height: 150px;
+}
+
+body {
+background-color: Green;
+}
+
+.box{
+    background: light-blue;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 75px;
+    color: Yellow;
 }

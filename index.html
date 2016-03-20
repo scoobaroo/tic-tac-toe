@@ -8,11 +8,12 @@
 
     <!-- Bootstrap CSS from CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="css/style.css"
     <!-- link to custom stylesheet (always require after Bootstrap) -->
 
     <!-- jQuery from CDN -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/app.js"></script>
 
     <!-- link to custom javascript file (always require after external JS libraries) -->
 
@@ -23,6 +24,7 @@
       <div class="row text-center">
         <div class="col-md-12">
           <h1>Tic Tac Toe</h1>
+            <button type="button" class="btn btn-danger">Reset</button>
           <hr>
         </div>
       </div>
@@ -30,18 +32,27 @@
 
         <!-- a column represents our game board -->
         <!-- the `offset` class helps us center the board -->
-        <div class="col-md-6 col-md-offset-3" id="board">
-
+        <div class="col-md-6 col-md-offset-3">
+        <!-- <div class="col-md-12" id="boardpng"> -->
+          <!-- <img src="board.png"> -->
+        <!-- </div> -->
           <!-- you can put rows inside of columns! -->
           <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
           <div class="row">
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
-            <div class="col-md-4 box">a</div>
+            <div class="col-md-4 box" id="top-left">a</div>
+            <div class="col-md-4 box" id="top-mid">a</div>
+            <div class="col-md-4 box" id="top-right">a</div>
           </div>
-
-
-
+          <div class="row">
+              <div class="col-md-4 box" id="mid-left">a</div>
+              <div class="col-md-4 box" id="mid-mid">a</div>
+              <div class="col-md-4 box" id="mid-right">a</div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 box" id="bot-left">a</div>
+            <div class="col-md-4 box" id="bot-mid">a</div>
+            <div class="col-md-4 box" id="bot-right">a</div>
+          </div>
         </div>
       </div>
     </div>
