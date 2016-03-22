@@ -22,48 +22,113 @@ $(document).ready(function() {
   })();
 
 //MARK BOX
-  if($("#top-left").on("click", function(event){
-    ($("#top-left").text(player));
-  }));
-  if($("#top-mid").on("click", function(event){
-    ($("#top-mid").text(player));
-  }));
-  if($("#top-right").on("click", function(event){
-    ($("#top-right").text(player));
-  }));
-  if($("#mid-left").on("click", function(event){
-    ($("#mid-left").text(player));
-  }));
-  if($("#mid-mid").on("click", function(event){
-    ($("#mid-mid").text(player));
-  }));
-  if($("#mid-right").on("click", function(event){
-    ($("#mid-right").text(player));
-  }));
-  if($("#bot-left").on("click", function(event){
-    ($("#bot-left").text(player));
-  }));
-  if($("#bot-mid").on("click", function(event){
-    ($("#bot-mid").text(player));
-  }));
-  if($("#bot-right").on("click", function(event){
-    ($("#bot-right").text(player));
-  }));
+  $("#top-left").on("click", function(event){
+    if($(this).hasClass("full"))
+    {
+      alert("spot taken");
+    }
+    else
+    {
+      $("#top-left").text(player);
+    }
+});
+$("#top-mid").on("click", function(event){
+    if($(this).hasClass("full"))
+    {
+      alert("spot taken");
+    }
+    else
+    {
+      $("#top-mid").text(player);
+    }
+});
+$("#top-right").on("click", function(event){
+    if($(this).hasClass("full"))
+    {
+      alert("spot taken");
+    }
+    else
+    {
+      $("#top-right").text(player);
+    }
+});
+$("#mid-left").on("click", function(event){
+    if($(this).hasClass("full"))
+    {
+      alert("spot taken");
+    }
+    else
+    {
+      $("#mid-left").text(player);
+    }
+  });
+$("#mid-mid").on("click", function(event){
+    if($(this).hasClass("full"))
+    {
+      alert("spot taken");
+    }
+    else
+    {
+      $("#mid-mid").text(player);
+    }
+  });
+$("#mid-right").on("click", function(event){
+    if($(this).hasClass("full"))
+    {
+      alert("spot taken");
+    }
+    else
+    {
+      $("#mid-right").text(player);
+    }
+  });
+$("#bot-left").on("click", function(event){
+    if($(this).hasClass("full"))
+    {
+      alert("spot taken");
+    }
+    else
+    {
+      $("#bot-left").text(player);
+    }
+  });
+$("#bot-mid").on("click", function(event){
+    if($(this).hasClass("full"))
+    {
+      alert("spot taken");
+    }
+    else
+    {
+      $("#bot-mid").text(player);
+    }
+  });
+$("#bot-right").on("click", function(event){
+    if($(this).hasClass("full"))
+    {
+      alert("spot taken");
+    }
+    else
+    {
+      $("#bot-right").text(player);
+    }
+  });
 //BOX FULL DETECT
 
 $(".box").on("click", function(event){
   $(this).addClass("full");
-});
-$(".full").on("click", function(event) {
-  alert("Spot Taken");
-});
+  });
+// $(".box").on('click', function() {
+//   // check if this box is already claimed
+//   if ($(this).text() === "O" || $(this).text() === "X") {
+//     $(this).addClass("full");
+//   }});
 
 // if($(".box").hasClass("full")){
 //     alert("Spot Taken!");
 // }
-// $(".box").addEventListener("click", function() {
+// // $(".box").addEventListener("click", function() {
 // $(".box").on("click", function(event){
-// if($(".box").hasClass("full")){
+// if($(this).hasClass("full")){
 //     alert("Spot Taken!");
 //   }});
 // });
